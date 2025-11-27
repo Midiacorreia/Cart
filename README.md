@@ -29,5 +29,5 @@ O objetivo principal foi **praticar lógica de programação**, manipulação do
 
 ## 👁️Deploy
 
-Vercel: ()
+Vercel: (https://cart-woad-seven.vercel.app/)
 
