@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Cartão de Crédito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="titulo">
+      <img src="imgs_icons/credit_card.svg" alt="icon1" style="height: 40px;">
+      <h2> Novo cartão de crédito</h2>
+    </div>
+
+    <div class="cartao-visual">
+      <img src="imgs_icons/chip_card.png" alt="icon2" class="chip">
+      <div class="dados-cartao">
+        <p id="numero-cartao-visual">Número do Cartão</p>
+        <p id="nome-cartao-visual">Nome Impresso</p>
+        <p id="validade-cartao-visual">Validade</p>
+        <p id="codigo-cvv-visual">CVV</p>
+      </div>
+    </div>
+
+    <form id="form-cartao">
+
+      <label for="numero-cartao">Número do cartão</label>
+      <input type="text" type="text"  id="numero-cartao"
+        placeholder="XXXX.XXXX.XXXX.XXXX" maxlength="19" required>
+      <!-- <input type="text" inputmode="numeric" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="numero-cartao" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required> -->
+
+      <label for="nome-cartao">Nome impresso no cartão</label>
+      <input type="text" id="nome-cartao" placeholder="Ex: Maria Oliveira" required
+        oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');">
+
+      <div class="linha">
+        <div style="margin-right: 15px;">
+          <label for="mes-validade">Validade (mês)</label>
+          <input type="text" id="mes-validade" placeholder="MM" maxlength="2" required>
+        </div>
+        <div style="margin-right: 15px;">
+          <label for="ano-validade">Validade (ano)</label>
+          <input type="text" id="ano-validade" placeholder="AA" maxlength="2" required>
+        </div>
+        <div>
+          <label for="codigo-cvv">CVV</label>
+          <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+            id="codigo-cvv" placeholder="***" maxlength="3" required>
+        </div>
+      </div>
+
+      <button type="submit" id="botao-enviar">Adicionar Cartão</button>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

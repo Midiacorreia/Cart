@@ -1,0 +1,98 @@
+body {
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  background-color: #f0e0e0;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+}
+.titulo{
+    display: flex;
+}
+
+.titulo h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #444;
+}
+
+.cartao-visual {
+  background: linear-gradient(135deg, #b77bf1, #7c4dff);
+  height: 180px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.cartao-visual .chip {
+  width: 45px;
+  height: 30px;
+  background: #d4c097;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.dados-cartao {
+  display: table-column-group 2;
+  flex: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00000098;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.linha div {
+  flex: 1;
+}
+
+
+#botao-enviar {
+  margin-top: 20px;
+  background-color: #8e75d3;
+  color: rgb(14, 14, 14);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#botao-enviar:hover {
+  background-color: #502ad8;
+  color: aliceblue;
+}
